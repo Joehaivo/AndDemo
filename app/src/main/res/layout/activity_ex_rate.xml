@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.joehaivo.simplecalculator.ExRateActivity">
+
+    <Button
+        android:id="@+id/button2Dot"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="numBtnClick"
+        android:text="."
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/button23" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="numBtnClick"
+        android:text="3"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/button26" />
+
+    <Button
+        android:id="@+id/button2Equal"
+        android:layout_width="80dp"
+        android:layout_height="138dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="equal2BtnClick"
+        android:text="="
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@+id/button26"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2C" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="numBtnClick"
+        android:text="6"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/button29" />
+
+    <Button
+        android:id="@+id/btnE1"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="numBtnClick"
+        android:text="1"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnE2"
+        app:layout_constraintTop_toBottomOf="@+id/button24" />
+
+    <Button
+        android:id="@+id/btnUpdateRate"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="btnUpdateRateClick"
+        android:text="更新汇率"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnE0"
+        app:layout_constraintTop_toBottomOf="@+id/btnE1" />
+
+    <Button
+        android:id="@+id/btnE0"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="numBtnClick"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/button23" />
+
+    <Button
+        android:id="@+id/btnE2"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="numBtnClick"
+        android:text="2"
+        android:textSize="24sp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/button25" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="numBtnClick"
+        android:text="4"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button25"
+        app:layout_constraintTop_toBottomOf="@+id/button27" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="numBtnClick"
+        android:text="5"
+        android:textSize="24sp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/button28" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"
+        tools:layout_editor_absoluteY="153dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="180dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:entries="@array/currency_CN"
+        app:layout_constraintBottom_toTopOf="@+id/spinner3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:entries="@array/currency"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="false"
+        android:contextClickable="false"
+
+        android:textAlignment="viewEnd"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/spinner3"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:editable="true"
+        android:textAlignment="viewEnd"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text2"
+        app:layout_constraintLeft_toRightOf="@+id/spinner2"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:contextClickable="false" />
+
+    <Button
+        android:id="@+id/button28"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="numBtnClick"
+        android:text="8"
+        android:textSize="24sp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="numBtnClick"
+        android:text="7"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button28"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/button2C"
+        android:layout_width="80dp"
+        android:layout_height="138dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="ECBtnClick"
+        android:text="C"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@+id/button29"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/button29"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="numBtnClick"
+        android:text="9"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+</android.support.constraint.ConstraintLayout>

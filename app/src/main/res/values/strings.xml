@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Demo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">设置</string>
+    <string name="title_chooseApp">应用选择器</string>
+    <string name="title_activity_HWeather">HWeather</string>
+</resources>
